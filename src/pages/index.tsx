@@ -39,7 +39,7 @@ export default function Home() {
       <div id="features" className="w-full">
         <AutomateFinance />
         <BackedBy />
-        <NeoGPTSection />
+        {/* <NeoGPTSection /> */}
       </div>
 
       <div id="neogpt" className="w-full">
