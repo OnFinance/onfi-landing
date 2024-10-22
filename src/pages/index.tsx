@@ -15,23 +15,53 @@ import Certifications from "@/components/landing/Certifications";
 
 
 export default function Home() {
-  const [openNav,setOpenNav] = useState(false);
+  const [openNav, setOpenNav] = useState(false);
+
   return (
-    <div onClick={()=>{
-      setOpenNav(false);
-    }} className='w-screen min-h-screen flex flex-col items-center bg-[#FEFDF5]'>
+    <div
+      onClick={() => {
+        setOpenNav(false);
+      }}
+      className="w-screen min-h-screen flex flex-col items-center bg-[#FEFDF5]"
+    >
       <Nav openNav={openNav} setOpenNav={setOpenNav} />
-      <HeroSection/>
-      <WorksWith/>
-      <Certifications/>
-      <AutomateFinance/>
-      <BackedBy/>
-      <NeoGPTSection/>
-      <MediaArticles/>
-      <ReliableSection/>
-      <DeployedSecurely/>
-      <OurBlog/>
-      <Footer/>
+
+      {/* Full-width sections with IDs for internal linking */}
+      <div id="hero" className="w-full">
+        <HeroSection />
+      </div>
+
+      <div className="w-full">
+        <WorksWith />
+        <Certifications />
+      </div>
+
+      <div id="features" className="w-full">
+        <AutomateFinance />
+        <BackedBy />
+        {/* <NeoGPTSection /> */}
+      </div>
+
+      <div id="neogpt" className="w-full">
+        <NeoGPTSection />
+      </div>
+
+      <div className="w-full">
+        <MediaArticles />
+      </div>
+
+      <div id="pricing" className="w-full">
+        <DeployedSecurely />
+        <ReliableSection />
+      </div>
+
+      <div id="blogs" className="w-full">
+        <OurBlog />
+      </div>
+
+      <div id="contact" className="w-full">
+        <Footer />
+      </div>
     </div>
   );
 }
