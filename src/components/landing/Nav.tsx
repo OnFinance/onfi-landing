@@ -15,7 +15,7 @@ const Nav:React.FC<NavProps> = ({openNav,setOpenNav}) => {
             <Image src={Logo} alt='logo' className='object-cover' />
         </div>
         <div className='hidden lg:flex items-center justify-center gap-7 text-base poppins-regular text-[#10A68C]'>
-            <a href="#hero">Why NeoGPT?</a>
+            <a href="#neogpt">Why NeoGPT?</a>
             <a href="#features">Features</a>
             <a href="#pricing">Pricing</a>
             <a href="#blogs">Blogs</a>
@@ -35,7 +35,7 @@ const Nav:React.FC<NavProps> = ({openNav,setOpenNav}) => {
             }
             {openNav && 
               <div onClick={(e)=>e.stopPropagation()} className='z-[100] absolute right-0 top-10 rounded-xl custom-drop-shadow gap-4 whitespace-pre flex flex-col p-6 bg-[#FFFFFF] text-base poppins-regular text-[#272727]'>
-                <a href="#hero">Why NeoGPT?</a>
+                <a href="#neogpt">Why NeoGPT?</a>
                 <a href="#features">Features</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#blogs">Blogs</a>

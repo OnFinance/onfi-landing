@@ -42,6 +42,10 @@ export default function Home() {
         <NeoGPTSection />
       </div>
 
+      <div id="neogpt" className="w-full">
+        <NeoGPTSection />
+      </div>
+
       <div className="w-full">
         <MediaArticles />
       </div>
